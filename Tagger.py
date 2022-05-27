@@ -33,10 +33,10 @@ async def start(event):
   await event.reply("**🦁 @ASOSONZİRVE ASOTagger_bot**\n ile Grupunuzdakı Bütün Üserlərə Etiket Ata bilirəm \nKomutlar için =======> /komek yazın**",
                     buttons=(
                    
-		      [Button.url('Məni Gruba At ➕', 'https://t.me/ASOtagger_bot?startgroup=a')],
-                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/WerabliAnlar')],
-                      [Button.url('ASO Rəsmi📣', 'https://t.me/ASOresmi')],
-		      [Button.url('Sahibim👨🏻‍💻', 'https://t.me/ismiyev95')],
+		      [Button.url('Məni Gruba At ➕', 'https://t.me/BQBtagger_bot?startgroup=a')],
+                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/Qarabag_team_N1')],
+                      [Button.url('ASO Rəsmi📣', 'https://https://t.me/BQBresmmi')],
+		      [Button.url('Sahibim👨🏻‍💻', 'https://t.me/kenandiii')],
                     ),
                     link_preview=False
                    )
@@ -45,10 +45,10 @@ async def help(event):
   helptext = "**🦁 @ASOSONZİRVE ASOTagger_bot Komutları**\n\n**/tag <səbəb> - 5-li Etiket Atar**\n\n**/etag <səbəb> - Emoji ile etiketlər**\n\n**/tektag səbəb - Userleri Tək Tək Etiketler**\n\n**/adminler səbəb - Yöneticileri Tək Tək Tag Edər**\n\n**/start - botu başlatır**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Məni Gruba Ekle➕', 'https://t.me/ASOTagger_bot?startgroup=a')],
-                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/WerabliAnlar')],
-                      [Button.url('ASO Rəsmi🔖', 'https://t.me/ASOresmi')],
-		      [Button.url('Sahibim🧑‍🔧', 'https://t.me/ismiyev95')],
+                      [Button.url('Məni Gruba Ekle➕', 'https://t.me/BQBTagger_bot?startgroup=a')],
+                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/Qarabag_team_N1')],
+                      [Button.url('ASO Rəsmi🔖', 'https://t.me/BQBresmmi')],
+		      [Button.url('Sahibim🧑‍🔧', 'https://t.me/kenandiii')],
                     ),
                     link_preview=False
                    )
@@ -293,5 +293,5 @@ async def mentionall(tagadmin):
 		sleep(0.5)
 
 
-print(">> Bot işləyir artıq 🚀 @ismiyev95 bilgi alabilirsin <<")
+print(">> Bot işləyir artıq 🚀 @kenandiii bilgi alabilirsin <<")
 client.run_until_disconnected()

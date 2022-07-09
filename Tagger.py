@@ -58,7 +58,7 @@ async def help(event):
   helptext = "**Çok özellikleri Etiket Botu Bulmaya Çalışan Grub Sahibleri @PenalionTagger_bot Size Göre:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Ancaq Yöneticileri etiketləyər\n📌\n\n Böyle Çok özellikli @PenalionTagger_bot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Məni Gruba At➕', 'https://t.me/ASOtagger_bot?startgroup=a' )],
+                      [Button.url('Məni Gruba At➕', 'https://t.me/PenalionTagger_bot?startgroup=a' )],
                     ),
                     link_preview=False
                    )
@@ -194,7 +194,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("durdum🌹 @@blackmafiaqrup 🇦🇿")
+        await event.respond("durdum🌹 @blackmafiaqrup 🇦🇿")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)

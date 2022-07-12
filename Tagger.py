@@ -34,8 +34,8 @@ async def start(event):
                     buttons=(
                    
 		      [Button.url('Məni Gruba At ➕', 'http://t.me/PenalionTagger_Bot?startgroup=a')],
-                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/blackmafiaqrup')],
-                      [Button.url('Mmc Rəsmi📣', 'https://t.me/QarabagMmc')],
+                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/LionKingdomGroup')],
+                      [Button.url('Mmc Rəsmi📣', 'https://t.me/LionnProject')],
 		      [Button.url('Sahibim👨🏻‍💻', 'https://t.me/qartalamucalarda')],
                     ),
                     link_preview=False
@@ -46,8 +46,8 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Gruba Ekle➕', 'https://t.me/PenalionTagger_bot?startgroup=a')],
-                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/blackmafiaqrup')],
-                      [Button.url('Mmc Rəsmi🔖', 'https://t.me/QarabagMmc')],
+                      [Button.url('Söhbət Qrupumuz✈️', 'https://t.me/LionKingdomGroup')],
+                      [Button.url('Mmc Rəsmi🔖', 'https://t.me/LionnProject')],
 		      [Button.url('Sahibim🧑‍🔧', 'https://t.me/qartalamucalarda')],
                     ),
                     link_preview=False
@@ -62,8 +62,7 @@ async def help(event):
                     ),
                     link_preview=False
                    )
-	
-	
+		
 
 @client.on(events.NewMessage(pattern='^(?i)/dur'))
 async def dur(event):
@@ -98,9 +97,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("**Geçmiş mesajlar için etiket ede bilmirəm**")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("tag etmək üçün səbəb yoxdu🙁 @blackmafiaqrup 🇦🇿")
+    return await event.respond("tag etmək üçün səbəb yoxdu🙁 @LionKingdomGroup 🇦🇿")
   else:
-    return await event.respond("**Etikete Başlamak için sebeb yazın @blackmafiaqrup...!**🇦🇿")
+    return await event.respond("**Etikete Başlamak için sebeb yazın @LionKingdomGroup...!**🇦🇿")
   
   if mode == "text_on_cmd":
     emoji_calisan.append(event.chat_id)
@@ -110,7 +109,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("** durdum🌹 @blackmafiaqrup 🇦🇿**")
+        await event.respond("** durdum🌹 @LionKingdomGroup 🇦🇿**")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -128,7 +127,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("durdum🙁 @blackmafiaqrup \n\n**Burda sizin reklamınız ola bilər @blackmafiaqrup**🇦🇿")
+        await event.respond("durdum🙁 @LionKingdomGroup \n\n**Burda sizin reklamınız ola bilər @blackmafiaqrup**🇦🇿")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -164,9 +163,9 @@ async def mentionall(event):
     if msg == None:
         return await event.respond("Önceki Mesajlara Cevab Vermeyin")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond("Başlatmaq üçün səbəb yoxdu🙁 @blackmafiaqrup 🇦🇿")
+    return await event.respond("Başlatmaq üçün səbəb yoxdu🙁 @LionKingdomGroup 🇦🇿")
   else:
-    return await event.respond("Işleme başlamak üçün səbəb yoxdu🙁 @blackmafiaqrup ")
+    return await event.respond("Işleme başlamak üçün səbəb yoxdu🙁 @LionKingdomGroup ")
   
   if mode == "text_on_cmd":
     anlik_calisan.append(event.chat_id)
@@ -176,7 +175,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Durdum🌹 @blackmafiaqrup\n\n**Burda sizin reklamınız ola bilir @blackmafiaqrup **🇦🇿")
+        await event.respond("Durdum🌹 @LionKingdomGroup\n\n**Burda sizin reklamınız ola bilir @blackmafiaqrup **🇦🇿")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
